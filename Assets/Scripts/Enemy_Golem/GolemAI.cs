@@ -13,9 +13,6 @@ public class GolemAI : MonoBehaviour
     [SerializeField] private float viewAngle = 90f;
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private LayerMask obstacleMask;
-    //[SerializeField] private float meshResolution = 1f;
-    //[SerializeField] private int edgeIterations = 4;
-    //[SerializeField] private float edgeDistance = 0.5f;
 
     [SerializeField] private Transform[] wayPoints;
     private int m_CurrentWayPointIndex;
@@ -71,9 +68,12 @@ public class GolemAI : MonoBehaviour
             navMeshAgent.SetDestination(m_PlayerPosition);
         }
 
+
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            if (m_WaitTime <=0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 6f)
+            //Debug.Log(navMeshAgent.remainingDistance);
+            if (m_WaitTime <=0 && !m_CaughtPlayer && Vector3.Distance(transform.position, 
+                GameObject.FindGameObjectWithTag("Player").transform.position) >= 6f)
             {
                 m_IsPatrol = true;
                 m_PlayerNear = false;
@@ -84,9 +84,11 @@ public class GolemAI : MonoBehaviour
             }
             else
             {
-                if (Vector3.Distance(transform.position,GameObject.FindGameObjectWithTag("Player").transform.position) >= 2.5f)
+                if (Vector3.Distance(transform.position,
+                    GameObject.FindGameObjectWithTag("Player").transform.position) <= 2.5f)
                 {
                     Stop();
+                    Debug.Log("stop");
                     m_WaitTime -= Time.deltaTime;
                 }
             }
@@ -207,14 +209,5 @@ public class GolemAI : MonoBehaviour
                 m_PlayerPosition = player.transform.position;
             }
         }
-
     }
-
-
-
-
-
-
-
-
 }

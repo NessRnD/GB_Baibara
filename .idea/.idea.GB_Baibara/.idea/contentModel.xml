@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\NessRnD\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\NessRnD\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GB_Baibara.1110888995.00" t="ExcludeRecursive" />
+    <e p="F:\Documents\GitHub\GB_Baibara" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Animations" t="Include" />
+        <e p="Fonts" t="Include" />
+        <e p="InputSystem" t="Include">
+          <e p="Controls.cs" t="Include" />
+        </e>
+        <e p="Materials" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Materials" t="Include" />
+          <e p="Textures" t="Include" />
+        </e>
+        <e p="OtherAssets" t="Include">
+          <e p="Mini Legion Rock Golem PBR HP Polyart" t="Include">
+            <e p="Animations" t="Include" />
+            <e p="Materials" t="Include" />
+            <e p="Meshes" t="Include" />
+            <e p="Prefabs" t="Include" />
+            <e p="Scenes" t="Include" />
+            <e p="Textures" t="Include" />
+          </e>
+        </e>
+        <e p="Prefabs" t="Include">
+          <e p="FastPrefabs" t="Include" />
+          <e p="Particles" t="Include" />
+        </e>
+        <e p="Scenes" t="Include">
+          <e p="1stScene" t="Include" />
+          <e p="SampleScene_Profiles" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Animations.cs" t="Include" />
+          <e p="ChangeWeapon.cs" t="Include" />
+          <e p="Enemy_Golem" t="Include">
+            <e p="GolemAI.cs" t="Include" />
+          </e>
+          <e p="Menu" t="Include">
+            <e p="ExitGame.cs" t="Include" />
+            <e p="NotUsed" t="Include">
+              <e p="EndGameMenu.cs" t="Include" />
+              <e p="StartNextLvl.cs" t="Include" />
+            </e>
+            <e p="PauseMenu.cs" t="Include" />
+            <e p="StartGame.cs" t="Include" />
+          </e>
+          <e p="MoveControl.cs" t="Include" />
+          <e p="ObjectScript.cs" t="Include" />
+          <e p="OnOffPlayerController.cs" t="Include" />
+          <e p="PauseUIControl.cs" t="Include" />
+          <e p="PlayPlatformParticles.cs" t="Include" />
+          <e p="StartCutScene.cs" t="Include" />
+          <e p="ViewControl.cs" t="Include" />
+        </e>
+        <e p="Sounds" t="Include" />
+        <e p="Standard Assets" t="Include">
+          <e p="Environment" t="Include">
+            <e p="SpeedTree" t="Include">
+              <e p="Broadleaf" t="Include">
+                <e p="Broadleaf_Desktop Materials" t="Include">
+                  <e p="LOD0" t="Include" />
+                  <e p="LOD1" t="Include" />
+                  <e p="LOD2" t="Include" />
+                </e>
+                <e p="Broadleaf_Mobile Materials" t="Include">
+                  <e p="LOD0" t="Include" />
+                  <e p="LOD1" t="Include" />
+                  <e p="LOD2" t="Include" />
+                </e>
+              </e>
+              <e p="Conifer" t="Include">
+                <e p="Conifer_Desktop Materials" t="Include">
+                  <e p="LOD0" t="Include" />
+                  <e p="LOD1" t="Include" />
+                  <e p="LOD2" t="Include" />
+                </e>
+              </e>
+              <e p="Palm" t="Include">
+                <e p="Palm_Desktop Materials" t="Include">
+                  <e p="LOD0" t="Include" />
+                  <e p="LOD1" t="Include" />
+                  <e p="LOD2" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="TerrainAssets" t="Include">
+              <e p="BillboardTextures" t="Include" />
+              <e p="SurfaceTextures" t="Include" />
+            </e>
+            <e p="Water" t="Include">
+              <e p="Water" t="Include">
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include" />
+                <e p="Prefabs" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="Displace.cs" t="Include" />
+                  <e p="GerstnerDisplace.cs" t="Include" />
+                  <e p="MeshContainer.cs" t="Include" />
+                  <e p="PlanarReflection.cs" t="Include" />
+                  <e p="SpecularLighting.cs" t="Include" />
+                  <e p="Water.cs" t="Include" />
+                  <e p="WaterBase.cs" t="Include" />
+                  <e p="WaterTile.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="FXWaterPro.shader" t="Include" />
+                </e>
+                <e p="Textures" t="Include" />
+              </e>
+              <e p="Water4" t="Include">
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include" />
+                <e p="Prefabs" t="Include" />
+                <e p="Shaders" t="Include">
+                  <e p="FXWater4Advanced.shader" t="Include" />
+                  <e p="FXWater4Simple.shader" t="Include" />
+                  <e p="WaterInclude.cginc" t="Include" />
+                </e>
+                <e p="Textures" t="Include" />
+              </e>
+            </e>
+            <e p="Water (Basic)" t="Include">
+              <e p="Materials" t="Include" />
+              <e p="Models" t="Include" />
+              <e p="Prefabs" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="WaterBasic.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="FXWaterBasic.shader" t="Include" />
+              </e>
+              <e p="Textures" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Terrain" t="Include" />
+        <e p="TerrainStamps" t="Include" />
+        <e p="Textures" t="Include">
+          <e p="Particle_images" t="Include" />
+        </e>
+        <e p="Timelines" t="Include">
+          <e p="Signal" t="Include" />
+        </e>
+      </e>
+      <e p="GB_Baibara.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
