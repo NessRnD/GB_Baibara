@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f003c1e2-a171-4a84-a961-094a4a14d041" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1stScene/NavMesh-Ground.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1stScene/NavMesh-Ground.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707334996967</updated>
       <workItem from="1707335010365" duration="4928000" />
+      <workItem from="1707417855853" duration="7858000" />
     </task>
     <servers />
   </component>
@@ -47,5 +48,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="848" key="VCS.FileHistoryDialog" timestamp="1707426782740">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="92" y="92" width="1736" height="848" key="VCS.FileHistoryDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1707426782740" />
   </component>
 </project>
