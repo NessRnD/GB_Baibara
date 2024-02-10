@@ -12,22 +12,25 @@ public class GolemAI : MonoBehaviour
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private LayerMask obstacleMask;
     [SerializeField] private Transform[] wayPoints;
-    
+
     private int currentWayPointIndex;
     private Vector3 playerPosition;
     private float waitTime;
     private bool playerInRange;
     private bool isPatrol;
+    private bool playerIsNear;
+    private bool caughtPlayer;
 
     private Animator anim;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        
+    
         playerPosition=Vector3.zero;
         isPatrol = true;
         playerInRange = false;
+        playerIsNear = false;
         waitTime = startWaitTime;
 
         currentWayPointIndex = 0;
@@ -53,31 +56,29 @@ public class GolemAI : MonoBehaviour
 
     private void Chasing()
     {
-        //playerLastPosition = Vector3.zero;
-        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-        {
-            Stop();
-            anim.SetBool("Attack", true);
-        }
-        else
+        if (!caughtPlayer)
         {
             anim.SetBool("Attack", false);
             Move(speedRun);
             navMeshAgent.SetDestination(playerPosition);
+        }
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        {
+            caughtPlayer = true;
+            transform.LookAt(playerPosition);
+            anim.SetBool("Attack", true);
+            Stop();
         }
     }
 
     private void Move(float speed)
     {
         anim.SetBool("Walk",true);
-        if (isPatrol)
-        {
-            anim.SetBool("Victory",false);
-        }
+        anim.SetBool("Victory",false);
         navMeshAgent.isStopped = false;
         navMeshAgent.speed = speed;
     }
-    
+
     private void Stop()
     {
         anim.SetBool("Walk",false);
@@ -94,7 +95,7 @@ public class GolemAI : MonoBehaviour
         currentWayPointIndex = (currentWayPointIndex + 1) % wayPoints.Length;
         navMeshAgent.SetDestination(wayPoints[currentWayPointIndex].position);
     }
-    
+
     // патрулирование
     private void Patroling()
     {
@@ -110,18 +111,20 @@ public class GolemAI : MonoBehaviour
             else
             {
                 Stop();
-                Debug.Log("patroling stop2");
                 waitTime -= Time.deltaTime;
             }
         }
     }
-    
-    /*входная точка скрипта*/
+
+    /// <summary>
+    /// мозг голема, скрипт отвечающий за поиск игрока, измерения расстояния от
+    /// голема до игрока, перехода меду состояниями.
+    /// </summary>
     private void EnvironmentView()
     {
         //поиск игрока
         Collider[] playerInRange = Physics.OverlapSphere(transform.position, viewRadius, playerMask);
-        //не входит в цикл пока не найдет игрока
+
         for (int i = 0; i < playerInRange.Length; i++)
         {
             Transform player = playerInRange[i].transform; //берем трансформ игрока
@@ -129,7 +132,8 @@ public class GolemAI : MonoBehaviour
             if (Vector3.Angle(transform.forward, dirToPlayer) < viewAngle / 2)
             {
                 float dstToPlayer = Vector3.Distance(transform.position, player.position);
-                if (!Physics.Raycast(transform.position, dirToPlayer, dstToPlayer, obstacleMask)) //если препятствия не мешают видеть игрока
+                //если препятствия не мешают видеть игрока
+                if (!Physics.Raycast(transform.position, dirToPlayer, dstToPlayer, obstacleMask)) 
                 {
                     this.playerInRange = true; //погоня
                     isPatrol = false;
@@ -140,13 +144,19 @@ public class GolemAI : MonoBehaviour
                 }
             }
             
-            // если убежали далеко
+            // если игрок убежал далеко:
             if (Vector3.Distance(transform.position, player.position) > viewRadius)
             {
-                Debug.Log("lost");
                 this.playerInRange = false;
                 isPatrol = true;
             }
+            //погоня, если игрок уворачивается от атаки:
+            if (Vector3.Distance(transform.position, player.position) > navMeshAgent.stoppingDistance)
+            {
+                this.playerInRange = true; 
+                caughtPlayer = false;
+            }
+            
             // находим позицию игрока
             if (this.playerInRange)
             {

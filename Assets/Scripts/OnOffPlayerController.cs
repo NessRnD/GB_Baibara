@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class OnOffPlayerController : MonoBehaviour
 {
     //private ViewControl viewControl;
@@ -21,6 +22,4 @@ public class OnOffPlayerController : MonoBehaviour
         moveControl.enabled = false;
         //viewControl.enabled = false;
     }
-
-
 }

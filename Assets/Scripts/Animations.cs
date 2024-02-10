@@ -11,6 +11,7 @@ public class Animations : MonoBehaviour
         controls = new Controls();
 
         controls.Player.Jump.performed += JumpAnimation;
+        controls.Player.Attack.performed += AttackAnimation;
     }
 
     private void FixedUpdate()
@@ -38,11 +39,24 @@ public class Animations : MonoBehaviour
         }
     }
 
+    private void AttackAnimation(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            animator.SetTrigger("Attack");
+        }
+    }
+
+    public void DeathAnimation()
+    {
+        OnDisable();
+    }
+
     private void OnEnable()
     {
         controls.Enable();
     }
-    
+
     private void OnDisable()
     {
         controls.Disable();

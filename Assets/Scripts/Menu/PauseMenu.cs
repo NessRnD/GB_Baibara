@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public UnityEvent offPauseMenuEvent;
-    
+
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject audioSourceObject;
     private AudioSource audioSource;

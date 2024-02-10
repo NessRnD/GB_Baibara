@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f003c1e2-a171-4a84-a961-094a4a14d041" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/KnightController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/KnightController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Controls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Controls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack01.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Prefabs/PBR_Golem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Prefabs/PBR_Golem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1stScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1stScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/EndGameMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/EndGameMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +54,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EndGameMenu.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/StartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAIfsm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" />
       </list>
     </option>
@@ -40,19 +101,34 @@
       <updated>1707334996967</updated>
       <workItem from="1707335010365" duration="4928000" />
       <workItem from="1707417855853" duration="7858000" />
+      <workItem from="1707500046404" duration="3470000" />
+      <workItem from="1707586653453" duration="4479000" />
+      <workItem from="1707592607914" duration="6553000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1736" height="848" key="VCS.FileHistoryDialog" timestamp="1707426782740">
+    <state x="92" y="92" width="1736" height="848" key="VCS.FileHistoryDialog" timestamp="1707589329791">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="92" y="92" width="1736" height="848" key="VCS.FileHistoryDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1707426782740" />
+    <state x="92" y="92" width="1736" height="848" key="VCS.FileHistoryDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1707589329791" />
   </component>
 </project>

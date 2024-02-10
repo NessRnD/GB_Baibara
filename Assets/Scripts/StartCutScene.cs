@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
+
 public class StartCutScene : MonoBehaviour
 {
     [SerializeField] private PlayableDirector timeline;

@@ -19,7 +19,7 @@ public class ViewControl : MonoBehaviour
     private void Awake() // выполняется до функции Start
     {
         controls = new Controls(); // поключаем управление
-        
+    
         controls.Player.Look.performed += context => input_View = context.ReadValue<Vector2>();
         controls.Player.Look.canceled += context => input_View = Vector2.zero;
     }

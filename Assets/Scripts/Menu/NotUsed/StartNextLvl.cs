@@ -7,5 +7,4 @@ public class StartNextLvl : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
-
 }
