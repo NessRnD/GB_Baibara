@@ -40,9 +40,11 @@
           <e p="Animations.cs" t="Include" />
           <e p="ChangeWeapon.cs" t="Include" />
           <e p="Enemy_Golem" t="Include">
+            <e p="EnemyMeleeDamageDealer.cs" t="Include" />
             <e p="GolemAI.cs" t="Include" />
           </e>
           <e p="Health.cs" t="Include" />
+          <e p="MeleeDamageDealer.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="EndGameMenu.cs" t="Include" />
             <e p="ExitGame.cs" t="Include" />

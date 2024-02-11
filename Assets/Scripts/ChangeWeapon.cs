@@ -1,40 +1,35 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ChangeWeapon : MonoBehaviour
 {
     [SerializeField] private GameObject[] weapons;
     private int weaponNumber;
+    private Controls controls;
 
+    private void Awake()
+    {
+        controls = new Controls();
+        controls.Player.ChangeWeapon.performed += OnChangeWeapon;
+    }
     void Start()
     {
-        weaponNumber = 0;
         DeactivateWeapon();
+        weaponNumber = 0;
+        weapons[weaponNumber].SetActive(true);
     }
 
-    void Update()
+    private void OnChangeWeapon(InputAction.CallbackContext context)
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        weaponNumber++;
+        if (weaponNumber == weapons.Length+1) 
         {
-            weaponNumber++;
-            if (weaponNumber == weapons.Length+1) 
-            {
-                weaponNumber = 1;
-            }
-            DeactivateWeapon();
-            weapons[weaponNumber-1].SetActive(true);
+            weaponNumber = 1;
         }
-
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
-        {
-            weaponNumber--;
-            if (weaponNumber <= 0)
-            {
-                weaponNumber = weapons.Length;
-            }
-            DeactivateWeapon();
-            weapons[weaponNumber - 1].SetActive(true);
-        }
+        DeactivateWeapon();
+        weapons[weaponNumber-1].SetActive(true);
     }
+
 
     private void DeactivateWeapon()
     {
@@ -43,5 +38,16 @@ public class ChangeWeapon : MonoBehaviour
             weapon.SetActive(false);
         }
     }
+    
+    private void OnEnable()
+    {
+        controls.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Player.Disable();
+    }
+    
 }
 

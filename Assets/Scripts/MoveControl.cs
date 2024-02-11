@@ -13,10 +13,7 @@ public class MoveControl : MonoBehaviour
     private void Awake() // выполняется до функции Start
     {
         cc = GetComponent<CharacterController>();
-
         controls = new Controls();
-        controls.Player.Enable();
-
         controls.Player.Jump.performed += JumpMove;
     }
 
@@ -51,6 +48,16 @@ public class MoveControl : MonoBehaviour
     private void Gravity() 
     {
         yVelocity += gravity * Time.deltaTime;
+    }
+    
+    private void OnEnable()
+    {
+        controls.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Player.Disable();
     }
 
 }

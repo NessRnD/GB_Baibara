@@ -21,30 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="f003c1e2-a171-4a84-a961-094a4a14d041" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/KnightController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/KnightController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Controls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Controls.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack01.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack02.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack02.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/FreeGolem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/FreeGolem.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Prefabs/PBR_Golem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Prefabs/PBR_Golem.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1stScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1stScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/EndGameMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/EndGameMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +47,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.7.5/Runtime/Events/Signals/SignalReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EndGameMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeleeDamageDealer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" />
@@ -74,9 +65,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAIfsm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageDealer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMeleeDamageDealer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MeleeDamageDealer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" />
       </list>
     </option>
@@ -104,6 +100,7 @@
       <workItem from="1707500046404" duration="3470000" />
       <workItem from="1707586653453" duration="4479000" />
       <workItem from="1707592607914" duration="6553000" />
+      <workItem from="1707678287792" duration="7020000" />
     </task>
     <servers />
   </component>

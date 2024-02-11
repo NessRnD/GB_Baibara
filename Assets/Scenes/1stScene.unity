@@ -1542,6 +1542,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 137796994688791331, guid: 00227bd4bc38edd41b52a84d2e8a6c6b, type: 3}
   m_PrefabInstance: {fileID: 659402620}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &517150581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814528731726153000, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+  m_PrefabInstance: {fileID: 802851534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &517150585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517150581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da64492d30ccced41896be8870f1b89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
+  objectTag: Enemy
 --- !u!43 &517562764
 Mesh:
   m_ObjectHideFlags: 0
@@ -4055,10 +4074,41 @@ PrefabInstance:
       propertyPath: offPauseMenuEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1734531077}
+    - target: {fileID: 4416789316154018649, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534126538337018767, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800910162752707157, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800996897437234109, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279859779819406519, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052734750416892517, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814528731726153000, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8814528731726153000, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 517150585}
   m_SourcePrefab: {fileID: 100100000, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
 --- !u!114 &802851536 stripped
 MonoBehaviour:
@@ -9803,6 +9853,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1522562509}
+    - target: {fileID: 4105437119010988242, guid: b5fbfa8aab334fd448340669a8a6efc2, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4105437119010988242, guid: b5fbfa8aab334fd448340669a8a6efc2, type: 3}
       propertyPath: m_SortingLayerID
       value: 0

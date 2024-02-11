@@ -1,6 +1,8 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(Health))]
 public class GolemAI : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent navMeshAgent;
@@ -13,24 +15,28 @@ public class GolemAI : MonoBehaviour
     [SerializeField] private LayerMask obstacleMask;
     [SerializeField] private Transform[] wayPoints;
 
+    private Health enemyHealth;
+
     private int currentWayPointIndex;
     private Vector3 playerPosition;
     private float waitTime;
     private bool playerInRange;
     private bool isPatrol;
-    private bool playerIsNear;
     private bool caughtPlayer;
+    private bool isAlive;
 
     private Animator anim;
 
     private void Start()
     {
+        isAlive = true;
+        
         anim = GetComponent<Animator>();
+        enemyHealth = GetComponent<Health>();
     
         playerPosition=Vector3.zero;
         isPatrol = true;
         playerInRange = false;
-        playerIsNear = false;
         waitTime = startWaitTime;
 
         currentWayPointIndex = 0;
@@ -42,18 +48,25 @@ public class GolemAI : MonoBehaviour
 
     private void Update()
     {
-        EnvironmentView();
+        if (isAlive)
+        {
+           EnvironmentView();
+   
+           if (!isPatrol)
+           {
+               Chasing();
+           }
+           else
+           {
+               Patroling();
+           } 
+        }
 
-        if (!isPatrol)
-        {
-            Chasing();
-        }
-        else
-        {
-            Patroling();
-        }
     }
 
+    /// <summary>
+    /// приследование
+    /// </summary>
     private void Chasing()
     {
         if (!caughtPlayer)
@@ -71,6 +84,10 @@ public class GolemAI : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Движение (из параметров задается скорость ходьбы или бега)
+    /// </summary>
+    /// <param name="speed"></param>
     private void Move(float speed)
     {
         anim.SetBool("Walk",true);
@@ -79,6 +96,9 @@ public class GolemAI : MonoBehaviour
         navMeshAgent.speed = speed;
     }
 
+    /// <summary>
+    /// остановка
+    /// </summary>
     private void Stop()
     {
         anim.SetBool("Walk",false);
@@ -89,14 +109,19 @@ public class GolemAI : MonoBehaviour
         navMeshAgent.isStopped = true;
         navMeshAgent.speed = 0;
     }
-
+    
+    /// <summary>
+    /// переход к следующей точке
+    /// </summary>
     private void NextPoint()
     {
         currentWayPointIndex = (currentWayPointIndex + 1) % wayPoints.Length;
         navMeshAgent.SetDestination(wayPoints[currentWayPointIndex].position);
     }
 
-    // патрулирование
+    /// <summary>
+    /// патрулирование
+    /// </summary>
     private void Patroling()
     {
         navMeshAgent.SetDestination(wayPoints[currentWayPointIndex].position);
@@ -114,6 +139,35 @@ public class GolemAI : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider playerWeapon)
+    {
+        if (playerWeapon.tag == "MeleeWeapon")
+        {
+            if (enemyHealth.IsDeadCheker())
+            {
+                isAlive = false;
+                Death();
+            }
+            else
+            {
+                TakeDamage();
+            }
+            
+            
+        }
+    }
+
+    private void Death()
+    {
+        Debug.Log("enemyDown");
+        anim.SetBool("Death", true);
+        gameObject.GetComponent<Collider>().enabled = false;
+    }
+    private void TakeDamage()
+    {
+        anim.SetTrigger("Hit");
     }
 
     /// <summary>

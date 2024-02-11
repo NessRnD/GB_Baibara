@@ -18,6 +18,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log(gameObject.name + " " + "taked Damage:" + damage + " currentHealth=" + currentHealth);
         currentHealth -= damage;
         onTakeDamageEvent.Invoke(currentHealth);
         CheckIsAlive();
