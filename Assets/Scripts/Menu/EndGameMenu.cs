@@ -11,13 +11,20 @@ public class EndGameMenu : MonoBehaviour
     {
         endGameMenu.SetActive(false);
     }
-
+    
+    /// <summary>
+    /// Вызов экрана поражения при смерти игрока.
+    /// </summary>
     public void CallEndGameMenuOnDeath()
     {
         endGameText.text = "Game Over";
         StartCoroutine(DeathDelay());
     }
-
+    
+    /// <summary>
+    /// Корутина задержки вызова экрана поражения
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator DeathDelay() 
     { 
         yield return new WaitForSeconds(1);

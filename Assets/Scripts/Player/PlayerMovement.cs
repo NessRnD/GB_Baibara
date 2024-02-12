@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MoveControl : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float gravity = -14f;
@@ -10,7 +10,7 @@ public class MoveControl : MonoBehaviour
     private CharacterController cc;
     private Controls controls;
 
-    private void Awake() // выполн€етс€ до функции Start
+    private void Awake()
     {
         cc = GetComponent<CharacterController>();
         controls = new Controls();
@@ -28,8 +28,8 @@ public class MoveControl : MonoBehaviour
     }
     private void LateUpdate()
     {
-        float y = Camera.main.transform.localEulerAngles.y; // смещение камеры по Y
-        transform.eulerAngles = new Vector3(0, y, 0); // поворот объекта в углах Ёйлера
+        float y = Camera.main.transform.localEulerAngles.y;
+        transform.eulerAngles = new Vector3(0, y, 0);
     }
 
     private void JumpMove(InputAction.CallbackContext context)
@@ -39,7 +39,6 @@ public class MoveControl : MonoBehaviour
         {
             if (context.performed)
             {
-                //Debug.Log(context);
                 yVelocity = jumpHeight;
             }
         }

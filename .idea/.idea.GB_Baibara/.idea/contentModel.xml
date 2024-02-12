@@ -34,17 +34,14 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="1stScene" t="Include" />
-          <e p="SampleScene_Profiles" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Animations.cs" t="Include" />
-          <e p="ChangeWeapon.cs" t="Include" />
           <e p="Enemy_Golem" t="Include">
+            <e p="EnemyAnimations.cs" t="Include" />
             <e p="EnemyMeleeDamageDealer.cs" t="Include" />
             <e p="GolemAI.cs" t="Include" />
           </e>
           <e p="Health.cs" t="Include" />
-          <e p="MeleeDamageDealer.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="EndGameMenu.cs" t="Include" />
             <e p="ExitGame.cs" t="Include" />
@@ -54,13 +51,19 @@
             <e p="PauseMenu.cs" t="Include" />
             <e p="StartGame.cs" t="Include" />
           </e>
-          <e p="MoveControl.cs" t="Include" />
-          <e p="ObjectScript.cs" t="Include" />
-          <e p="OnOffPlayerController.cs" t="Include" />
-          <e p="PauseUIControl.cs" t="Include" />
-          <e p="PlayPlatformParticles.cs" t="Include" />
-          <e p="StartCutScene.cs" t="Include" />
-          <e p="ViewControl.cs" t="Include" />
+          <e p="Particles" t="Include">
+            <e p="PlayPlatformParticles.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Animations.cs" t="Include" />
+            <e p="ChangeWeapon.cs" t="Include" />
+            <e p="PauseUIControl.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerViewMove.cs" t="Include" />
+          </e>
+          <e p="Weapon" t="Include">
+            <e p="MeleeDamageDealer.cs" t="Include" />
+          </e>
         </e>
         <e p="Sounds" t="Include" />
         <e p="Standard Assets" t="Include">

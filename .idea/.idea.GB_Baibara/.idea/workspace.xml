@@ -21,21 +21,53 @@
   <component name="ChangeListManager">
     <list default="true" id="f003c1e2-a171-4a84-a961-094a4a14d041" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GB_Baibara/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/KnightController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/KnightController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Controls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Controls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack01.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack02.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack02.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/FreeGolem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Animations/FreeGolem.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Prefabs/PBR_Golem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OtherAssets/Mini Legion Rock Golem PBR HP Polyart/Prefabs/PBR_Golem.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1stScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1stScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/PostProcess Volume 1 Profile 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/PostProcess Volume 1 Profile 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/PostProcess Volume 1 Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/PostProcess Volume 1 Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/PostProcess Volume 2 Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/PostProcess Volume 2 Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (1) Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (1) Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (2) Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (2) Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (3) Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (3) Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (5) Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/Virtual Camera (5) Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeleeDamageDealer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeleeDamageDealer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/StartGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/StartGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnOffPlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseUIControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +80,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.7.5/Runtime/Events/Signals/SignalReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerViewMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EndGameMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeleeDamageDealer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,18 +94,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayPlatformParticles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartCutScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ViewControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/NotUsed/StartNextLvl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAIfsm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageDealer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMeleeDamageDealer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeleeDamageDealer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/EnemyAnimations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/EndGameMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ExitGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/StartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/MeleeDamageDealer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Animations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ViewMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerViewMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ChangeWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_Golem/GolemAI.cs" />
       </list>
     </option>
@@ -101,6 +142,7 @@
       <workItem from="1707586653453" duration="4479000" />
       <workItem from="1707592607914" duration="6553000" />
       <workItem from="1707678287792" duration="7020000" />
+      <workItem from="1707763711928" duration="6396000" />
     </task>
     <servers />
   </component>

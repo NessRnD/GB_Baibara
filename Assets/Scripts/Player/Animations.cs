@@ -5,7 +5,8 @@ public class Animations : MonoBehaviour
 {
     private Animator animator;
     private Controls controls;
-    void Awake()
+    
+    private void Awake()
     {
         animator = GetComponent<Animator>();
         controls = new Controls();
@@ -20,6 +21,10 @@ public class Animations : MonoBehaviour
         MoveAnimation(inputVector);
     }
 
+    /// <summary>
+    /// движение игрока
+    /// </summary>
+    /// <param name="inputVector"></param> считывает значения системы ввода Player.Move
     private void MoveAnimation(Vector2 inputVector)
     {
         animator.SetFloat("RunVelocity", inputVector.y);
@@ -31,6 +36,10 @@ public class Animations : MonoBehaviour
             animator.SetFloat("StrafeVelocity", inputVector.x);
     }
 
+    /// <summary>
+    /// Включение анимации прыжка
+    /// </summary>
+    /// <param name="context"></param> считывает значения системы ввода Player.Jump
     private void JumpAnimation(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -38,7 +47,11 @@ public class Animations : MonoBehaviour
             animator.SetTrigger("Jump");
         }
     }
-
+    
+    /// <summary>
+    /// Включение анимации удара
+    /// </summary>
+    /// <param name="context"></param> считывает значения системы ввода Player.Attack
     private void AttackAnimation(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -47,6 +60,9 @@ public class Animations : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Выключение управления при смерти
+    /// </summary>
     public void DeathAnimation()
     {
         OnDisable();

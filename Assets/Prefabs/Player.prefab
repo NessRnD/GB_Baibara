@@ -40,12 +40,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858718717136746660}
-  - component: {fileID: 6964568216048881361}
-  - component: {fileID: 6802199656076437756}
   - component: {fileID: 8622168778874206128}
   - component: {fileID: 1651939600580459513}
-  - component: {fileID: 3727811129592538003}
   - component: {fileID: 5368100228730457328}
+  - component: {fileID: 6964568216048881361}
+  - component: {fileID: 6802199656076437756}
   - component: {fileID: 6320769836506886070}
   - component: {fileID: 2816029256860752064}
   - component: {fileID: 2792282566021668220}
@@ -74,38 +73,6 @@ Transform:
   - {fileID: 2224194844547814878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &6964568216048881361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525230305521455659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c824ee0b6df42af46bd770ef587828d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 4
-  cameraSensivity: 1
-  cameraYoffset: 1.6
-  cameraTopAngleBound: -80
-  cameraBotAngleBound: 7
---- !u!114 &6802199656076437756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525230305521455659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 422b949d6d6f70341a8afc1defb54368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.2
-  gravity: -9
-  jumpHeight: 3
 --- !u!54 &8622168778874206128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,18 +126,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 3.62, z: 0}
---- !u!114 &3727811129592538003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525230305521455659}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46783857d1f0d0c4a958ed587b79d99d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &5368100228730457328
 Animator:
   serializedVersion: 5
@@ -192,6 +147,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6964568216048881361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525230305521455659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c824ee0b6df42af46bd770ef587828d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 4
+  cameraSensivity: 1
+  cameraYoffset: 1.6
+  cameraTopAngleBound: -80
+  cameraBotAngleBound: 7
+--- !u!114 &6802199656076437756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525230305521455659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422b949d6d6f70341a8afc1defb54368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.2
+  gravity: -9
+  jumpHeight: 3
 --- !u!114 &6320769836506886070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,7 +1553,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3727811129592538003}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: OnOffPlayerController, Assembly-CSharp
           m_MethodName: DeactivateMoveControl
           m_Mode: 1
@@ -1580,7 +1567,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3727811129592538003}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: OnOffPlayerController, Assembly-CSharp
           m_MethodName: ActivateMoveControl
           m_Mode: 1

@@ -4086,6 +4086,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5203372514521832823, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: weaponUiImage
+      value: 
+      objectReference: {fileID: 1102529406}
+    - target: {fileID: 5203372514521832823, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: weaponIcons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203372514521832823, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: weaponIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9015150ab4af2ab4da1e7e4cf03094c0, type: 3}
+    - target: {fileID: 5203372514521832823, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
+      propertyPath: weaponIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7044df48e6859b74fb5d25850458a702, type: 3}
     - target: {fileID: 5800996897437234109, guid: 94ff5a8af8396a54088ad274afa70abd, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -5343,6 +5359,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1102529406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8178117748224676911, guid: d2f63669f88713a409e1ced3ac95283b, type: 3}
+  m_PrefabInstance: {fileID: 1066315896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1117828207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3997395740066019060, guid: b6a58be3701e0584a9cd27b999e1af34, type: 3}

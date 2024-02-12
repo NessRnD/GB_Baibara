@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ViewControl : MonoBehaviour
+public class PlayerViewMove : MonoBehaviour
 {
     private Controls controls; // подключаем систему ввода
 
@@ -40,9 +40,6 @@ public class ViewControl : MonoBehaviour
         Camera.main.transform.eulerAngles = new Vector3(-y, x, 0); // поворот камеры в углах Эйлера
         Camera.main.transform.position = Camera.main.transform.rotation * cameraOffset + transform.position; // непосредственно изменение положения
     }
-
-
-
 
     private void OnEnable() // активируем управление
     {

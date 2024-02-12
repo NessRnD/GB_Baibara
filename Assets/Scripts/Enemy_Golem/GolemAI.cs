@@ -1,8 +1,8 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(Health))]
+[RequireComponent(typeof(EnemyAnimations))]
 public class GolemAI : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent navMeshAgent;
@@ -16,7 +16,8 @@ public class GolemAI : MonoBehaviour
     [SerializeField] private Transform[] wayPoints;
 
     private Health enemyHealth;
-
+    private EnemyAnimations enemyAnimations;
+    
     private int currentWayPointIndex;
     private Vector3 playerPosition;
     private float waitTime;
@@ -25,13 +26,11 @@ public class GolemAI : MonoBehaviour
     private bool caughtPlayer;
     private bool isAlive;
 
-    private Animator anim;
-
     private void Start()
     {
         isAlive = true;
         
-        anim = GetComponent<Animator>();
+        enemyAnimations = GetComponent<EnemyAnimations>();
         enemyHealth = GetComponent<Health>();
     
         playerPosition=Vector3.zero;
@@ -71,7 +70,7 @@ public class GolemAI : MonoBehaviour
     {
         if (!caughtPlayer)
         {
-            anim.SetBool("Attack", false);
+            enemyAnimations.AttackAnimation(false);
             Move(speedRun);
             navMeshAgent.SetDestination(playerPosition);
         }
@@ -79,7 +78,7 @@ public class GolemAI : MonoBehaviour
         {
             caughtPlayer = true;
             transform.LookAt(playerPosition);
-            anim.SetBool("Attack", true);
+            enemyAnimations.AttackAnimation(true);
             Stop();
         }
     }
@@ -90,8 +89,8 @@ public class GolemAI : MonoBehaviour
     /// <param name="speed"></param>
     private void Move(float speed)
     {
-        anim.SetBool("Walk",true);
-        anim.SetBool("Victory",false);
+        enemyAnimations.WalkAnimation(true);
+        enemyAnimations.VictoryAnimation(false);
         navMeshAgent.isStopped = false;
         navMeshAgent.speed = speed;
     }
@@ -101,10 +100,10 @@ public class GolemAI : MonoBehaviour
     /// </summary>
     private void Stop()
     {
-        anim.SetBool("Walk",false);
+        enemyAnimations.WalkAnimation(false);
         if (isPatrol)
         {
-            anim.SetBool("Victory",true);
+            enemyAnimations.VictoryAnimation(true);
         }
         navMeshAgent.isStopped = true;
         navMeshAgent.speed = 0;
@@ -154,20 +153,18 @@ public class GolemAI : MonoBehaviour
             {
                 TakeDamage();
             }
-            
-            
         }
     }
 
     private void Death()
     {
         Debug.Log("enemyDown");
-        anim.SetBool("Death", true);
+        enemyAnimations.DeathAnimation(true);
         gameObject.GetComponent<Collider>().enabled = false;
     }
     private void TakeDamage()
     {
-        anim.SetTrigger("Hit");
+        enemyAnimations.HitAnimation();
     }
 
     /// <summary>

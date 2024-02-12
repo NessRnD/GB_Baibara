@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// Класс MeleeDamageDealer предназначен для определения взаимодействия оружия с внешними компонентами
+/// подходит как для оружия врага так и для игрока
+/// </summary>
 public class MeleeDamageDealer : MonoBehaviour
 {
     [SerializeField] private float damage;

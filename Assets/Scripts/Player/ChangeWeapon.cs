@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class ChangeWeapon : MonoBehaviour
 {
     [SerializeField] private GameObject[] weapons;
+    [SerializeField] private Image weaponUiImage;
+    [SerializeField] private Sprite[] weaponIcons;
     private int weaponNumber;
     private Controls controls;
 
@@ -12,25 +15,33 @@ public class ChangeWeapon : MonoBehaviour
         controls = new Controls();
         controls.Player.ChangeWeapon.performed += OnChangeWeapon;
     }
-    void Start()
+    private void Start()
     {
         DeactivateWeapon();
         weaponNumber = 0;
+        weaponUiImage.sprite = weaponIcons[weaponNumber];
         weapons[weaponNumber].SetActive(true);
     }
 
+    /// <summary>
+    /// Смена оружия
+    /// </summary>
+    /// <param name="context"></param>
     private void OnChangeWeapon(InputAction.CallbackContext context)
     {
-        weaponNumber++;
-        if (weaponNumber == weapons.Length+1) 
-        {
-            weaponNumber = 1;
-        }
         DeactivateWeapon();
-        weapons[weaponNumber-1].SetActive(true);
+        weaponNumber++;
+        if (weaponNumber > weapons.Length-1) 
+        {
+            weaponNumber = 0;
+        }
+        weaponUiImage.sprite = weaponIcons[weaponNumber];
+        weapons[weaponNumber].SetActive(true);
     }
 
-
+    /// <summary>
+    /// Деактивация всех оружий
+    /// </summary>
     private void DeactivateWeapon()
     {
         foreach (GameObject weapon in weapons)
